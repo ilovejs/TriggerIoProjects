@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+				<script>
+				function window$forge$_receive(result) {
+					try {
+						window.forge._receive(JSON.parse(result));
+					} catch (e) {
+						forge.logging.error("window$forge$_receive -> " + e);
+					}
+				}
+			</script><script src='../forge/all.js'></script>
+    <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <!--<script src="js/mustache.min.js"></script>-->
+    <script src="js/jquery.mobile-1.1.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    {{#forecastday}}
+    <td>
+        <h2>{{date.weekday_short}}</h2>
+        <img src="{{icon_url}}">
+        <div>{{conditions}}</div>
+        <div>Low: {{low.fahrenheit}}&deg;F</div>
+        <div>High: {{high.fahrenheit}}&deg;F</div>
+    </td>
+    {{/forecastday}}
+
+<section id="forecast_conditions">
+    <table>
+        <tr>
+        </tr>
+    </table>
+</section>
+
+</body>
+</html>

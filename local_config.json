@@ -1,0 +1,18 @@
+{
+    "android": {
+        "profiles": {
+            "DEFAULT": {
+                "keystore": "C:\\wawa", 
+                "keypass": "123123", 
+                "keyalias": "wode", 
+                "storepass": "123123"
+            }
+        }, 
+        "sdk": "C:\\Users\\mz\\AppData\\Local\\Android\\android-sdk"
+    }, 
+    "ios": {
+        "device": "simulator", 
+        "simulatorsdk": "6.0", 
+        "simulatorfamily": "iphone"
+    }
+}
